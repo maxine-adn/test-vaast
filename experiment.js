@@ -608,8 +608,7 @@ const vaast_training_block_1 = {
   	vaast_start, 
   	vaast_fixation, 
   	vaast_first_step_train, 
-  	vaast_second_step_train,
-    save_data
+  	vaast_second_step_train
   ],
   timeline_variables: vaast_stim_training_block_1_words,
   repetitions: 1,
@@ -621,8 +620,7 @@ const vaast_test_block_1 = {
   	vaast_start, 
   	vaast_fixation, 
   	vaast_first_step, 
-  	vaast_second_step, 
-  	save_data
+  	vaast_second_step
   ],
   timeline_variables: vaast_stim_block_1_words,
   repetitions: 1,
@@ -634,8 +632,7 @@ const vaast_training_block_2 = {
   	vaast_start, 
   	vaast_fixation, 
   	vaast_first_step_train, 
-  	vaast_second_step_train, 
-  	save_data
+  	vaast_second_step_train
   ],
   timeline_variables: vaast_stim_training_block_2_words,
   repetitions: 1,
@@ -647,8 +644,7 @@ const vaast_test_block_2 = {
   	vaast_start, 
   	vaast_fixation, 
   	vaast_first_step, 
-  	vaast_second_step, 
-  	save_data
+  	vaast_second_step
   ],
   timeline_variables: vaast_stim_block_2_words,
   repetitions: 1,
@@ -816,8 +812,7 @@ timeline.push(extra_information,
               extra_information_4,
               extra_information_5,
               extra_information_6,
-              extra_information_7,
-              save_data);
+              extra_information_7);
 
 // ending
 timeline.push(save_data,
