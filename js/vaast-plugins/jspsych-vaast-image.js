@@ -316,4 +316,4 @@ var jsPsychVaastImage = (function (jspsych) {
   return VaastImagePlugin;
 
 })(jsPsychModule);
-//# sourceMappingURL=index.browser.js.map
+//# sourceMappingURL=jspsych-vaast-image.js.map

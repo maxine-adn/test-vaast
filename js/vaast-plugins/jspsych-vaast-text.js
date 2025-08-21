@@ -315,4 +315,4 @@ var jsPsychVaastText = (function (jspsych) {
   return VaastTextPlugin;
 
 })(jsPsychModule);
-//# sourceMappingURL=index.browser.js.map
+//# sourceMappingURL=jspsych-vaast-text.js.map

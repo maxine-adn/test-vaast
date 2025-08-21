@@ -93,4 +93,4 @@ var jsPsychVaastFixation = (function (jspsych) {
   return VaastFixationPlugin;
 
 })(jsPsychModule);
-//# sourceMappingURL=index.browser.js.map
+//# sourceMappingURL=jspsych-vaast-fixation.js.map

@@ -22,11 +22,7 @@
 // --------------------------------------------------------------------------------------
 
 var jsPsych = initJsPsych({
-  on_interaction_data_update: function() {
-    saving_browser_events(completion = false);
-  },
   on_finish: function() {
-    saving_browser_events(completion = true);
     window.location.href = "your-redirection-url";
   }
 });
@@ -84,26 +80,23 @@ const stim_to_avoid_2 = cond2.stim_to_avoid;
 
 // VAAST background images --------------------------------------------------------------
 
-const background_env_eco = [
+const background_eco_env = [
   "background/eco_env/2.jpg",
   "background/eco_env/4.jpg",
   "background/eco_env/6.jpg"
 ];
 
-const background_fv_eco = [
+const background_eco_vf = [
   "background/eco_vf/2.jpg",
   "background/eco_vf/4.jpg",
   "background/eco_vf/6.jpg"
 ];
 
-let background = jsPsych.data.getURLVariable('background');
-if(background == null) {background = jsPsych.randomization.sampleWithoutReplacement([background_env_eco, background_fv_eco], 1)[0];}
+const background = jsPsych.randomization.sampleWithoutReplacement([background_eco_env, background_eco_vf], 1)[0];
 
-//let background = jsPsych.randomization.sampleWithoutReplacement([background_env_eco, background_fv_eco], 1)[0];
+bg_preview = background == background_eco_env ? "media/vaast-background_eco_env.jpg" : "media/vaast-background_eco_vf.jpg";
 
-bg_preview = background == background_env_eco ? "media/vaast-background_env_eco.jpg" : "media/vaast-background_fv_eco.jpg";
-
-
+ 
 // VAAST stimuli ------------------------------------------------------------------------
 const vaast_stim_training_block_1_words = [
   {stimulus: 'courage',     category: "pos", movement: move_pos_1},
@@ -243,8 +236,8 @@ const next_position = function() {
  
 const all_backgrounds = [
   "media/loading.gif", 
-  "media/vaast-background_env_eco.jpg", 
-  "media/vaast-background_fv_eco.jpg", 
+  "media/vaast-background_eco_env.jpg", 
+  "media/vaast-background_eco_env.jpg", 
   "media/keyboard-vaast-tgb3.png",
   "background/eco_env/2.jpg",
   "background/eco_env/4.jpg",
@@ -615,8 +608,8 @@ const vaast_training_block_1 = {
   	vaast_start, 
   	vaast_fixation, 
   	vaast_first_step_train, 
-  	vaast_second_step_train, 
-  	save_vaast_trial
+  	vaast_second_step_train,
+    save_data
   ],
   timeline_variables: vaast_stim_training_block_1_words,
   repetitions: 1,
@@ -629,7 +622,7 @@ const vaast_test_block_1 = {
   	vaast_fixation, 
   	vaast_first_step, 
   	vaast_second_step, 
-  	save_vaast_trial
+  	save_data
   ],
   timeline_variables: vaast_stim_block_1_words,
   repetitions: 1,
@@ -642,7 +635,7 @@ const vaast_training_block_2 = {
   	vaast_fixation, 
   	vaast_first_step_train, 
   	vaast_second_step_train, 
-  	save_vaast_trial
+  	save_data
   ],
   timeline_variables: vaast_stim_training_block_2_words,
   repetitions: 1,
@@ -655,7 +648,7 @@ const vaast_test_block_2 = {
   	vaast_fixation, 
   	vaast_first_step, 
   	vaast_second_step, 
-  	save_vaast_trial
+  	save_data
   ],
   timeline_variables: vaast_stim_block_2_words,
   repetitions: 1,
