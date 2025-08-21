@@ -34,7 +34,7 @@ var jsPsych = initJsPsych({
 // participant ID
 
 // if you use prolific:
-const subject_id = jsPsych.data.getURLVariable('PROLIFIC_PID');
+let subject_id = jsPsych.data.getURLVariable('PROLIFIC_PID');
 // otherwise:
 if(subject_id == null) 
   subject_id = jsPsych.randomization.randomID(10);
