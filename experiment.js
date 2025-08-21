@@ -100,11 +100,11 @@ bg_preview = background == background_eco_env ? "media/vaast-background_eco_env.
 // VAAST stimuli ------------------------------------------------------------------------
 const vaast_stim_training_block_1_words = [
   {stimulus: 'courage',     category: "pos", movement: move_pos_1},
-/** {stimulus: 'greatness',   category: "pos", movement: move_pos_1},
+ {stimulus: 'greatness',   category: "pos", movement: move_pos_1},
  {stimulus: 'wildlife',    category: "pos", movement: move_pos_1},
  {stimulus: 'poverty',     category: "neg", movement: move_neg_1},
  {stimulus: 'amputation',  category: "neg", movement: move_neg_1},
-  {stimulus: 'homicide',    category: "neg", movement: move_neg_1}, */
+  {stimulus: 'homicide',    category: "neg", movement: move_neg_1}, 
 ];
 
 const vaast_stim_block_1_words = [
@@ -152,11 +152,11 @@ const vaast_stim_block_1_words = [
 
 const vaast_stim_training_block_2_words = [
   {stimulus: 'courage',     category: "pos", movement: move_pos_2},
-  /*  {stimulus: 'greatness',   category: "pos", movement: move_pos_2},
+  {stimulus: 'greatness',   category: "pos", movement: move_pos_2},
   {stimulus: 'wildlife',    category: "pos", movement: move_pos_2},
   {stimulus: 'poverty',     category: "neg", movement: move_neg_2},
   {stimulus: 'amputation',  category: "neg", movement: move_neg_2},
-  {stimulus: 'homicide',    category: "neg", movement: move_neg_2}, */
+  {stimulus: 'homicide',    category: "neg", movement: move_neg_2},
 ];
 
 const vaast_stim_block_2_words = [
@@ -816,7 +816,8 @@ timeline.push(extra_information,
               extra_information_4,
               extra_information_5,
               extra_information_6,
-              extra_information_7);
+              extra_information_7,
+              save_data);
 
 // ending
 timeline.push(save_data,
