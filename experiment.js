@@ -21,11 +21,7 @@
 //
 // --------------------------------------------------------------------------------------
 
-var jsPsych = initJsPsych({
-  on_finish: function() {
-    window.location.href = "your-redirection-url";
-  }
-});
+var jsPsych = initJsPsych();
 
 // participant ID
 
