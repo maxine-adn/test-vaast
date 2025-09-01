@@ -659,8 +659,11 @@ const fullscreen_trial_exit = {
 const extra_information = {
   type: jsPsychHtmlKeyboardResponse,
   stimulus:
-    "<p class='instructions'>The study is almost finished. Now, you have to answer a few questions.</p>" +
-    "<p class='continue-instructions'>Press <strong>space</strong> to continue.</p>",
+    "<h1 class ='custom-title'> Task 1: Video Game Task</h1>" +
+    "<p class='instructions'>The Video Game task is now completed.</p>" +
+    "<p class='instructions'>We will now ask you some demographic questions.</p>" +
+    "<p class='instructions'>Please exit the fullscreen mode by pressing <strong>space</strong> to continue.</p>" +
+    "<p class = 'continue-instructions'>Press <strong>space</strong> to continue.</p>",
   choices: [' ']
 };
 
