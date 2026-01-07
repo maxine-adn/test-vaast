@@ -82,41 +82,41 @@ const background_eco_env = [
   "background/eco_env/6.jpg"
 ];
 
-const background_eco_vf = [
-  "background/eco_vf/2.jpg",
-  "background/eco_vf/4.jpg",
-  "background/eco_vf/6.jpg"
+const background_non_eco_env = [
+  "background/non_eco_env/2.jpg",
+  "background/non_eco_env/4.jpg",
+  "background/non_eco_env/6.jpg"
 ];
 
-const background = jsPsych.randomization.sampleWithoutReplacement([background_eco_env, background_eco_vf], 1)[0];
+const background = jsPsych.randomization.sampleWithoutReplacement([background_eco_env, background_non_eco_env], 1)[0];
 
-bg_preview = background == background_eco_env ? "media/vaast-background_eco_env.jpg" : "media/vaast-background_eco_vf.jpg";
+bg_preview = background == background_eco_env ? "media/vaast-background_eco_env.jpg" : "media/vaast-background_non_eco_env.jpg";
 
  
 // VAAST stimuli ------------------------------------------------------------------------
 const vaast_stim_training_block_1_words = [
   {stimulus: 'courage',     category: "pos", movement: move_pos_1},
- {stimulus: 'greatness',   category: "pos", movement: move_pos_1},
- {stimulus: 'wildlife',    category: "pos", movement: move_pos_1},
- {stimulus: 'poverty',     category: "neg", movement: move_neg_1},
- {stimulus: 'amputation',  category: "neg", movement: move_neg_1},
+  {stimulus: 'greatness',   category: "pos", movement: move_pos_1},
+  {stimulus: 'wildlife',    category: "pos", movement: move_pos_1},
+  {stimulus: 'poverty',     category: "neg", movement: move_neg_1},
+  {stimulus: 'amputation',  category: "neg", movement: move_neg_1},
   {stimulus: 'homicide',    category: "neg", movement: move_neg_1}, 
 ];
 
 const vaast_stim_block_1_words = [
   {stimulus: 'accomplishment',  category: "pos",  movement: move_pos_1},
 /* {stimulus: 'comedy',          category: "pos",  movement: move_pos_1},
-{stimulus: 'compassion',      category: "pos",  movement: move_pos_1},
-{stimulus: 'delight',         category: "pos",  movement: move_pos_1},
-{stimulus: 'enjoyment',       category: "pos",  movement: move_pos_1},
-{stimulus: 'excellence',      category: "pos",  movement: move_pos_1},
-{stimulus: 'friendship',      category: "pos",  movement: move_pos_1},
-{stimulus: 'happiness',       category: "pos",  movement: move_pos_1},
-{stimulus: 'harmony',         category: "pos",  movement: move_pos_1},
-{stimulus: 'honeymoon',       category: "pos",  movement: move_pos_1},
-{stimulus: 'hug',             category: "pos",  movement: move_pos_1},
-{stimulus: 'humor',           category: "pos",  movement: move_pos_1},
-{stimulus: 'kindness',        category: "pos",  movement: move_pos_1},
+  {stimulus: 'compassion',      category: "pos",  movement: move_pos_1},
+  {stimulus: 'delight',         category: "pos",  movement: move_pos_1},
+  {stimulus: 'enjoyment',       category: "pos",  movement: move_pos_1},
+  {stimulus: 'excellence',      category: "pos",  movement: move_pos_1},
+  {stimulus: 'friendship',      category: "pos",  movement: move_pos_1},
+  {stimulus: 'happiness',       category: "pos",  movement: move_pos_1},
+  {stimulus: 'harmony',         category: "pos",  movement: move_pos_1},
+  {stimulus: 'honeymoon',       category: "pos",  movement: move_pos_1},
+  {stimulus: 'hug',             category: "pos",  movement: move_pos_1},
+  {stimulus: 'humor',           category: "pos",  movement: move_pos_1},
+  {stimulus: 'kindness',        category: "pos",  movement: move_pos_1},
   {stimulus: 'laughter',        category: "pos",  movement: move_pos_1},
   {stimulus: 'liberty',         category: "pos",  movement: move_pos_1},
   {stimulus: 'relaxation',      category: "pos",  movement: move_pos_1},
@@ -231,16 +231,15 @@ const next_position = function() {
 // contains most of the images that have to be pre-loaded.
  
 const all_backgrounds = [
-  "media/loading.gif", 
   "media/vaast-background_eco_env.jpg", 
   "media/vaast-background_eco_env.jpg", 
   "media/keyboard-vaast-tgb3.png",
   "background/eco_env/2.jpg",
   "background/eco_env/4.jpg",
   "background/eco_env/6.jpg",
-  "background/eco_vf/2.jpg",
-  "background/eco_vf/4.jpg",
-  "background/eco_vf/6.jpg"
+  "background/non_eco_env/2.jpg",
+  "background/non_eco_env/4.jpg",
+  "background/non_eco_env/6.jpg"
 ];
 
 const preload = {
