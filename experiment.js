@@ -77,9 +77,9 @@ const stim_to_avoid_2 = cond2.stim_to_avoid;
 // VAAST background images --------------------------------------------------------------
 
 const background_eco_env = [
-  "background/eco_env/2.jpg",
-  "background/eco_env/4.jpg",
-  "background/eco_env/6.jpg"
+  "background/eco_env/1.jpg",
+  "background/eco_env/3.jpg",
+  "background/eco_env/5.jpg"
 ];
 
 const background_non_eco_env = [
