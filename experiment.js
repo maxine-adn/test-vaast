@@ -234,9 +234,9 @@ const all_backgrounds = [
   "media/vaast-background_eco_env.jpg", 
   "media/vaast-background_eco_env.jpg", 
   "media/keyboard-vaast-tgb3.png",
-  "background/eco_env/2.jpg",
-  "background/eco_env/4.jpg",
-  "background/eco_env/6.jpg",
+  "background/eco_env/1.jpg",
+  "background/eco_env/3.jpg",
+  "background/eco_env/5.jpg",
   "background/non_eco_env/2.jpg",
   "background/non_eco_env/4.jpg",
   "background/non_eco_env/6.jpg"
